@@ -18,12 +18,13 @@
     <script src="js/viewNotes.js"></script>
   </head> 
   <body>
+      
     <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-menu">
         <a class="navbar-item" href="writeNote.html">
           Add a new note
         </a>
-      </div>
+       </div>
     </nav>
     <div class="container">
       <div class="section">
@@ -37,6 +38,13 @@
         </div>
       </div>
     </div>
+    <div class="overlay"> 
+         <div class="modal1">
+       
+       </div>
+    </div></div>
+   
+
     <footer class="footer">
       <div class="container">
         <div class="content has-text-centered">
@@ -50,3 +58,59 @@
   </body>
 
 </html>
+
+<style>
+    .imgalign{
+        display: flex;
+        justify-content: center;
+        column-gap: 30px;
+        align-items: flex-end
+    }
+
+    img {
+    border-radius: 67px;
+    width: 45px;
+    margin-top: 17px;
+    margin-left: 10px;
+}
+
+.card-content {
+    background-color: transparent;
+    padding-top: 7px;
+    padding-left: 19px;
+    padding-bottom: 29px;
+}
+
+.overlay{
+height: 100vh;
+    width: 100vw;
+    background: rgba(0,0,0,0.8);
+    position: absolute;
+    top: 0px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    display: none
+}
+
+button.maximize {
+    background: white;
+    border: none;
+    padding: 8px 11px;
+    border-radius: 4px;
+    box-shadow: 0px 2px 4px #737373;
+    margin-left: 23px;
+    margin-bottom: 26px;
+    font-family: 'Open Sans';
+}
+
+.modal1{
+        height: 251px;
+    width: 332px;
+    background: white;
+    z-index: 400;
+    border-radius: 4px;
+    box-shadow: 0px 2px 4px grey;
+}
+</style>
+ 
