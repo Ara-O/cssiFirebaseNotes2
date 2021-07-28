@@ -53,6 +53,7 @@ return `<div class="column is-one-quarter"  >
            </header>
            <div class="card-content">
              <div class="content">${note.text}</div>
+             <div class="content">${note.label}</div>
            </div>
          </div>
        </div>`;
