@@ -66,6 +66,7 @@ function renderCard(note) {
              <p  class="card-header-title">${googleUserName}</p>
            <div class="card-content">
              <div class="content">${note.text}</div>
+             <div class="content">${note.label}</div>
            </div>
            <button class="maximize" onclick="maximize(${no})">Maximize</button>
           </div>
